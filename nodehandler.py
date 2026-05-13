@@ -20,15 +20,18 @@ Map = {
     },
 }
 
-def getnode(node):
-    return Map[node]
+class Nodehandler:
+    def __init__(self):
+        self.currentNode = "start"
 
-def setnode(currentnode, cardinalDirection):
-    if cardinalDirection in Map[currentnode]["exits"]:
-        return Map[currentnode]["exits"][cardinalDirection]
-    else:
-        print("Invalid direction.")
-        return currentnode
+    def getnode(self, node):
+        return Map[node]
 
-
+    def setnode(self, currentnode, cardinalDirection):
+        if cardinalDirection in Map[currentnode]["exits"]:
+            return Map[currentnode]["exits"][cardinalDirection]
+        else:
+            print("Invalid direction.")
+            return currentnode
+    
     
