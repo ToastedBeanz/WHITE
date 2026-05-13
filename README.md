@@ -8,4 +8,4 @@ also, **download** the zip, because, one, who wants to keep on copy+pasting the 
 
 also, **if you want to contribute, please ask me first**, because I have a lot of things planned for the game, and I dont want to have to redo a lot of work, because someone added something that I didnt want. but if you want to contribute, just ask me, and we can talk about it.
 
-oone more thing, this is a computer science project, so you cannot help contribute before the date of 5/13/2026, because it is duo on the date. after that if i am willing to continue the project, then can you collaborate.
+oone more thing, this is a computer science project, so you cannot help contribute before the date of 5/13/2026, because it is due on the date. after that if i am willing to continue the project, then can you collaborate.
