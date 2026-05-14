@@ -39,7 +39,14 @@ class Player:
             self.mp += amnt
         else:
             self.mp += amnt
-            if self.hp > self.maxmp:
-                self.hp = self.maxmp
+            if self.mp > self.maxmp:
+                self.mp = self.maxmp
     
-    def changeStory()
+    def changeStory(self, act=None, chapter=None):
+        if act is not None:
+            self.act = act
+        if chapter is not None:
+            self.chapt = chapter
+
+
+
