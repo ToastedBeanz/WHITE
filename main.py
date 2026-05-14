@@ -79,7 +79,7 @@ def printWhite():
  `8b  d8'`8b  d8'   88       88
   `8bd8'  `8bd8'    88       88
     YP      YP      88       88""")
-    time.sleep(1)
+    time.sleep(.6)
     os.system('cls' if os.name == 'nt' else 'clear')
     pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
@@ -92,7 +92,7 @@ def printWhite():
   `8bd8'  `8bd8'    88       88  88
     YP      YP      88       88  88
 """)
-    time.sleep(1)
+    time.sleep(.7)
     os.system('cls' if os.name == 'nt' else 'clear')
     pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
@@ -105,7 +105,7 @@ def printWhite():
   `8bd8'  `8bd8'    88       88  88    88, 
     YP      YP      88       88  88    "Y888 
 """)
-    time.sleep(1)
+    time.sleep(.8)
     os.system('cls' if os.name == 'nt' else 'clear')
     pygame.mixer.Sound("audio/tck.mp3").play()
     print("""

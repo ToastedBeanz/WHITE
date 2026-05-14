@@ -18,12 +18,17 @@ def clear(what="screen"):
         sys.stdout.write("\033[K")
     if what == "lastchar":
         sys.stdout.write("\b \b")
-pygame.mixer.Sound("audio/start.mp3").play()
-print("""==== credits:
-Plot designer: ToastedBeanz   Main Programmer: Noah Keyes
-Debugger: ToastedBeanz""")
-time.sleep(5.5719)
-clear("screen")
-time.sleep(5.5719)
-main()
-clear("screen")
+def startup():
+    pygame.mixer.Sound("audio/start.mp3").play()
+    print("""==== credits:
+    Plot designer: ToastedBeanz   
+    Main Programmer: Noah Keyes
+    Debugger: ToastedBeanz""")
+    time.sleep(5.5719)
+    clear("screen")
+    time.sleep(5.5719)
+    main()
+    clear("screen")
+
+startup()
+
