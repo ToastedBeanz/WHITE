@@ -1,8 +1,6 @@
 from player import Player
 import json
-
-BASE36_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
+BASE36_CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def toBase36(num):
 
     if num == 0:
@@ -12,14 +10,14 @@ def toBase36(num):
 
     while num > 0:
 
-        num, remainder = divmod(num, 36)
+        num, remainder = divmod(num, 62)
 
         result = BASE36_CHARS[remainder] + result
     
     return result
 
 def fromBase36(text):
-    return int(text, 36)
+    return int(text, 62)
 
 def generateSaveCode(player):
     data = json.dumps(player.toDict())
@@ -29,9 +27,13 @@ def generateSaveCode(player):
 
     saveCode = toBase36(bigNum)
 
-    return bigNum
+    return saveCode
 
 def loadSaveCode(code):
+    code = code.replace("-", "")
+    code = code.replace(" ", "")
+    code = code.upper()
+
     bigNum = fromBase36(code)
 
     dataBytes = bigNum.to_bytes((bigNum.bit_length() + 7)//8,"big")
@@ -61,3 +63,12 @@ def formatCode(code):
         groups.append(code[g:g+4])
     
     return "-".join(groups)
+
+player = Player(None, "Noah", 100, 100, 20, 20, 4, 20, 2, 1)
+print("generating save code...")
+c = generateSaveCode(player)
+print(f"your save code is: {c}")
+i = fromBase36(c)
+print(f"decoded: {i}")
+z = loadSaveCode(c)
+print(z.toDict())

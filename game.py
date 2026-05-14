@@ -8,6 +8,8 @@ import pygame
 from main import playerSettings, animate, main
 from nodehandler import Nodehandler
 from player import Player
+from text import Text
+# from passwordhandler import 
 pygame.init()
 pygame.mixer.init()
 def clear(what="screen"):
@@ -19,6 +21,8 @@ def clear(what="screen"):
     if what == "lastchar":
         sys.stdout.write("\b \b")
 def startup():
+    my_text = Text("Hello, world!")
+    my_text.dialog()
     pygame.mixer.Sound("audio/start.mp3").play()
     print("""==== credits:
     Plot designer: ToastedBeanz   

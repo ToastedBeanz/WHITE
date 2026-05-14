@@ -1,5 +1,11 @@
 # ]==  white  ==[
-![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.1%20pre--alpha-red)
+![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.2%20pre--alpha-red)&nbsp;&nbsp;
+![GitHub last commit](https://img.shields.io/github/last-commit/ToastedBeanz/WHITE)
+![GitHub contributors](https://img.shields.io/github/contributors/ToastedBeanz/WHITE)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/ToastedBeanz/WHITE/total)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ToastedBeanz/WHITE)
+
+
 
 Thank you for checking out my game! Allow me to tell you what it is.
 **white** is a single-player text-based terminal rpg game, that you play in your terminal. the soundtrack is made all by [Toastedbeanz on github]().

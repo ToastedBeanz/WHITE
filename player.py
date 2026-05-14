@@ -13,6 +13,9 @@ class Player:
         self.act = act
         self.chapt = chapt
     
+    def toDict(self):
+        return vars(self)
+    
     def addInventory(self, item):
         self.inventory.append(item)
     
@@ -23,7 +26,7 @@ class Player:
             print(f"ERROR; could not find item \"{item}\" in inventory.")
     
 
-    def addHp(self, amnt, addmax="False"): # one function for adding normal hp and max hp :)
+    def addHp(self, amnt, addmax=False): # one function for adding normal hp and max hp :)
         if addmax:
             self.maxhp += amnt
             self.hp += amnt
@@ -33,7 +36,7 @@ class Player:
                 self.hp = self.maxhp
 
     
-    def addMp(self, amnt, addmax="False"):
+    def addMp(self, amnt, addmax=False):
         if addmax:
             self.maxmp += amnt
             self.mp += amnt
