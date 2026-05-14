@@ -1,4 +1,6 @@
-# PLEASE FOR THE LOVE OF GOD, READ THIS!!1!
+# ]==  white  ==[
+![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.1%20pre--alpha-red)
+
 
 **do NOT run this program using python 3.14 or above**, because as of the time, this isnt supported with pygame.
 
