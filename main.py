@@ -16,9 +16,15 @@ pygame.mixer.set_num_channels(32)
 #from colorama import Fore, Back, Style
 import winsound
 #colorama.init()
+
+quitmessages = [
+    'man, you dint know how to have any fun.',
+    'I knew you were a bummer, but I didnt know you were THIS much of a bummer?'
+]
+
 def dialouge(text, speed=1, pap=False, pac=False, pak=False, paa=False): # Range from 0 to 1, 0 being slowest, and 1 being fastest. pap meaning: "pause after period", if true, it will pause for a moment after every period.
     for char in text:
-        pygame.mixer.Sound("audio/tck.wav").play()
+        pygame.mixer.Sound("audio/tck.mp3").play()
         sys.stdout.write(char)
         sys.stdout.flush()
         if pap and char == ".":
@@ -50,7 +56,7 @@ playerSettings = {
 def printWhite():
     pygame.mixer.music.load("audio/WHITEtitle.mp3")
     pygame.mixer.music.play(-1)
-    pygame.mixer.Sound("audio/tck.wav").play()
+    pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
 
 
@@ -63,7 +69,7 @@ def printWhite():
 """)
     time.sleep(.5)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.wav").play()
+    pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
                     88
                     88
@@ -75,7 +81,7 @@ def printWhite():
     YP      YP      88       88""")
     time.sleep(1)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.wav").play()
+    pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
                     88           88                     
                     88           \"\"               
@@ -88,7 +94,7 @@ def printWhite():
 """)
     time.sleep(1)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.wav").play()
+    pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
                     88           88                     
                     88           \"\"    ,d             
@@ -101,7 +107,7 @@ def printWhite():
 """)
     time.sleep(1)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.wav").play()
+    pygame.mixer.Sound("audio/tck.mp3").play()
     print("""
                     88           88 
                     88           \"\"    ,d               
@@ -111,13 +117,13 @@ def printWhite():
  `8b  d8'`8b  d8'   88       88  88    88    8PP\"\"\"\"\"\"\" 
   `8bd8'  `8bd8'    88       88  88    88,   "8b,   ,aa 
     YP      YP      88       88  88    "Y888  `"Ybbd8"' 
-                            """ + buildTag() + """
+          
+                         ==  """ + buildTag() + """ ==
 """)
 
 def menu(m):
     while True:
         if m.lower() == "main":
-            #winsound.PlaySound("audio/Title.wav", winsound.SND_FILENAME | winsound.SND_ASYNC)
             printWhite()
             print("Your choices are: ")
             print("1. Start Game")
@@ -230,4 +236,3 @@ def main():
     dialouge("You wake up in the middle of the woods, you have no idea how you got there, but you know you have to survive.", 0.1, pap=True, pac=True, pak=True, paa=True)
     dialouge("Welcome... to WHITE.", 0.1, True, True, True, True)
     menu("main")
-#breakpoint here to escape any loop, or just use the line `break` */
