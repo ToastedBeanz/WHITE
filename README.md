@@ -1,12 +1,14 @@
 <img src="./img/whitebanner.png" style="max-width: 1000px; min-width: 100px; width: 100%">
-<h1 style="border:None;">White</h1><br><br><br><br><br><hr>
 
-![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.2%20pre--alpha-red)&nbsp;&nbsp;
+<div style="width:100%; flex-grow: 1; display: flex;">
+
+![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.2%20pre--alpha-red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ToastedBeanz/WHITE)
 ![GitHub contributors](https://img.shields.io/github/contributors/ToastedBeanz/WHITE)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/ToastedBeanz/WHITE/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ToastedBeanz/WHITE)
 
+</div>
 
 
 Thank you for checking out my game! Allow me to tell you what it is.
