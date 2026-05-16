@@ -24,7 +24,7 @@ quitmessages = [
 
 def dialouge(text, speed=1, pap=False, pac=False, pak=False, paa=False): # Range from 0 to 1, 0 being slowest, and 1 being fastest. pap meaning: "pause after period", if true, it will pause for a moment after every period.
     for char in text:
-        pygame.mixer.Sound("audio/tck.mp3").play()
+        pygame.mixer.Sound("audio/sfx/tck.mp3").play()
         sys.stdout.write(char)
         sys.stdout.flush()
         if pap and char == ".":
@@ -54,9 +54,9 @@ playerSettings = {
     "txtspd": 1
 }
 def printWhite():
-    pygame.mixer.music.load("audio/WHITEtitle.mp3")
+    pygame.mixer.music.load("audio/music/WHITEtitle.mp3")
     pygame.mixer.music.play(-1)
-    pygame.mixer.Sound("audio/tck.mp3").play()
+    pygame.mixer.Sound("audio/sfx/tck.mp3").play()
     print("""
 
 
@@ -69,7 +69,7 @@ def printWhite():
 """)
     time.sleep(.5)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.mp3").play()
+    pygame.mixer.Sound("audio/sfx/tck.mp3").play()
     print("""
                     88
                     88
@@ -81,7 +81,7 @@ def printWhite():
     YP      YP      88       88""")
     time.sleep(.6)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.mp3").play()
+    pygame.mixer.Sound("audio/sfx/tck.mp3").play()
     print("""
                     88           88                     
                     88           \"\"               
@@ -94,7 +94,7 @@ def printWhite():
 """)
     time.sleep(.7)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.mp3").play()
+    pygame.mixer.Sound("audio/sfx/tck.mp3").play()
     print("""
                     88           88                     
                     88           \"\"    ,d             
@@ -107,7 +107,7 @@ def printWhite():
 """)
     time.sleep(.8)
     os.system('cls' if os.name == 'nt' else 'clear')
-    pygame.mixer.Sound("audio/tck.mp3").play()
+    pygame.mixer.Sound("audio/sfx/tck.mp3").play()
     print("""
                     88           88 
                     88           \"\"    ,d               
@@ -133,15 +133,15 @@ def menu(m):
             choice = int(input(">: "))
             if choice == 4:
                 pygame.mixer.music.stop()
-                pygame.mixer.Sound("audio/Transition.mp3").play()
+                pygame.mixer.Sound("audio/sfx/Transition.mp3").play()
                 print("Well you just dont know how to play a game do you?")
                 time.sleep(1)
                 sys.exit()
             elif choice == 3:
                 pygame.mixer.music.stop()
-                pygame.mixer.Sound("audio/Transition.mp3").play()
+                pygame.mixer.Sound("audio/sfx/Transition.mp3").play()
                 time.sleep(1)
-                pygame.mixer.music.load("audio/Title.mp3")
+                pygame.mixer.music.load("audio/music/Title.mp3")
                 pygame.mixer.music.play(-1)
                 menu("Settings")
             elif choice == 2:
@@ -151,18 +151,16 @@ def menu(m):
                 #get out of the menu loop
                 pygame.mixer.music.stop()
                 break
-                time.sleep(1)
 
 
         elif m.lower() == "settings":
             print("Settings: ")
             print("1. Volume")
-            print("2. SFX Volume")
-            print("3. Text Speed")
-            print("4. Sound Test")
-            print("5. Back")
+            print("2. Text Speed")
+            print("3. Sound Test")
+            print("4. Back")
             choice = int(input(">: "))
-            if choice == 5:
+            if choice == 4:
                 pygame.mixer.music.stop()
                 pygame.mixer.Sound("audio/Transition.mp3").play()
                 time.sleep(1)
@@ -178,21 +176,13 @@ def menu(m):
                 pygame.mixer.music.set_volume(vol)
                 menu("Settings")
             elif choice == 2:
-                sfx = float(input("SFX Volume (0-1): "))
-                if sfx < 0 or sfx > 1:
-                    print("Invalid SFX volume.")
-                    menu("Settings")
-                playerSettings["sfx"] = sfx
-                pygame.mixer.Sound.set_volume(sfx)
-                menu("Settings")
-            elif choice == 3:
                 txtspd = float(input("Text Speed (0-1) (0 is slowest, 1 being fastest): "))
                 if txtspd < 0 or txtspd > 1:
                     print("Invalid text speed.")
                     menu("Settings")
                 playerSettings["txtspd"] = txtspd
                 menu("Settings")
-            elif choice == 4:
+            elif choice == 3:
                 print("ehh.. this isnt available yet, but you can test the sounds by going into the audio folder and playing them there.")
                 menu("Settings")
                         

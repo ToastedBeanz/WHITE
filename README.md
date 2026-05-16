@@ -23,7 +23,7 @@ you can switch your version by going to these sites to download them:
 
 if you have linux... uhh... i cant  really help you use a tutorial or something.
 
-once downloaded, you should be able to run the game (after running )
+once downloaded, you should be able to run the game (after running [pyproject.toml](./pyproject.toml))
 to start the game, **run the game.py file**, not main.py. this is very important, because main.py is just a file for testing and will not run the game, while game.py will run the game.
 
 also, **download** the zip, because, one, who wants to keep on copy+pasting the code, every time I change a small thing in the code, and two, because I have a lot of files, and it would be a pain to copy+paste all of them. plus, you cant copy+paste an audio file, so.. yeah, just download the zip, and run game.py, and you should be good to go. if you have any questions, ask me on discord, or something. I dont have it up but like, i will soon?
@@ -40,3 +40,5 @@ oone more thing, this is a computer science project, so you cannot help contribu
 changing up the readme
 ### version v0.1.4.1
 adding tags to readme + add devlog. Add a new track for planned prologue sequence. [here](./audio/evillmuahahaha.mp3)
+### version v0.1.4.2
+doing many changes to files, organizing files, and starting progress on the actuall game.

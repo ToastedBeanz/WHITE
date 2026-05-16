@@ -22,9 +22,9 @@ def clear(what="screen"):
     if what == "lastchar":
         sys.stdout.write("\b \b")
 def startup():
-    my_text = Text("Hello, world!")
-    my_text.dialog()
-    pygame.mixer.Sound("audio/start.mp3").play()
+    #my_text = Text("Hello, world!")
+    #my_text.dialog()
+    pygame.mixer.Sound("audio/sfx/start.mp3").play()
     print("""==== credits:
     Plot designer: ToastedBeanz   
     Main Programmer: Noah Keyes
