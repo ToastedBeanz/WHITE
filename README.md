@@ -1,4 +1,6 @@
-# ]==  white  ==[
+<img src="./img/whitebanner.png" style="max-width: 1000px; min-width: 100px; width: 100%">
+<h1 style="border:None;">White</h1><br><br><br><br><br><hr>
+
 ![Static Badge](https://img.shields.io/badge/Version-DEMO%20v0.1.4.2%20pre--alpha-red)&nbsp;&nbsp;
 ![GitHub last commit](https://img.shields.io/github/last-commit/ToastedBeanz/WHITE)
 ![GitHub contributors](https://img.shields.io/github/contributors/ToastedBeanz/WHITE)
@@ -8,7 +10,7 @@
 
 
 Thank you for checking out my game! Allow me to tell you what it is.
-**white** is a single-player text-based terminal rpg game, that you play in your terminal. the soundtrack is made all by [Toastedbeanz on github]().
+**white** is a single-player text-based terminal rpg game, that you play in your terminal. the soundtrack is made all by [Toastedbeanz on github](https://github.com/ToastedBeanz/).
 
 ## To run it
 **do NOT run this program using python 3.14 or above**, because as of the time, this isnt supported with pygame.
