@@ -5,6 +5,7 @@ import os
 import textwrap
 import math
 import pygame
+import numpy
 from main import playerSettings, animate, main
 from nodehandler import Nodehandler
 from player import Player

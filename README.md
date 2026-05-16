@@ -17,6 +17,13 @@ Thank you for checking out my game! Allow me to tell you what it is.
 ## To run it
 **do NOT run this program using python 3.14 or above**, because as of the time, this isnt supported with pygame.
 
+you can switch your version by going to these sites to download them:
+* [Python for Windows 64x](https://www.python.org/ftp/python/3.13.13/python-3.13.13-amd64.exe) (if you have windows, you probably are running 64x, so download this.)
+* [Python for MacOS](https://www.python.org/ftp/python/3.13.13/python-3.13.13-macos11.pkg) (download this for MacOS)
+
+if you have linux... uhh... i cant  really help you use a tutorial or something.
+
+once downloaded, you should be able to run the game (after running )
 to start the game, **run the game.py file**, not main.py. this is very important, because main.py is just a file for testing and will not run the game, while game.py will run the game.
 
 also, **download** the zip, because, one, who wants to keep on copy+pasting the code, every time I change a small thing in the code, and two, because I have a lot of files, and it would be a pain to copy+paste all of them. plus, you cant copy+paste an audio file, so.. yeah, just download the zip, and run game.py, and you should be good to go. if you have any questions, ask me on discord, or something. I dont have it up but like, i will soon?
